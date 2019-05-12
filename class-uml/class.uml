@@ -37,8 +37,8 @@ Location <-- MainLayout : uses
 
 Client --> AWS : POST
 Client <-- AWS : GET
-AWS -- DB 
-
+AWS --> DB : Write
+AWS <-- DB : Read
 
 
 package AWS <<Cloud>> 
@@ -60,22 +60,21 @@ class DbNewsRefresher
 package DB <<Database>> 
 {
 
-  class News
+  class Firm
 {
-newsId:int
+firmId:int
 newsImage:image
-newsTitle:string
-newsContent:string
-newsTopic:string
-newsDate:date
+firmTitle:string
+firmLocation:string
+firmTopic:string
 }
 
-class NewsRate
+class Discount
 {
-newsId:int
-likes:int
-dislikes:int
-count:int
+firmId: int
+discountId:int
+discountEndDate: Date
+discountContent: String
 }
 
 class User
