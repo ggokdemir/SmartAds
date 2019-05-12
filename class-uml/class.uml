@@ -1,0 +1,83 @@
+@startuml
+package AndroidDevice <<Rectangle>> {
+
+
+  class MainLayout
+{
++showPopup(): void
++showContentWhenClickedToPopup(): void
++changePassword(): void
++gpsLocation(): Location
+}
+
+
+  class LoginLayout
+{
++goToMainLayout(): void
++checkPermissions(): int
++signIn(): void
+}
+
+
+
+  class Location
+{
++getLng() : String
++getLat() : String
++setLng(String lng) : void
++setLat(String lat) : void
+-lng : String
+-lat : String
+}
+}
+
+AndroidDevice --> AspNET : POST
+AndroidDevice <-- AspNET : GET
+AspNET -- MSSQL 
+
+
+
+package AspNET <<Cloud>> 
+{
+
+
+  class DbFilter
+{
+  filterByTopic()
+}
+
+class DbNewsRefresher
+{
+ showPopupWhenAdded()
+
+}
+}
+
+package MSSQL <<Database>> 
+{
+
+  class News
+{
+newsId:int
+newsImage:image
+newsTitle:string
+newsContent:string
+newsTopic:string
+newsDate:date
+}
+
+class NewsRate
+{
+newsId:int
+likes:int
+dislikes:int
+count:int
+}
+
+class User
+{
+userId:int
+userName:int
+userPass:int
+}
+@enduml
