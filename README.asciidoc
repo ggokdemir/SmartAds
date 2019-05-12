@@ -1,2 +1,44 @@
-= SmartAdsMobile
-Main part of the project.
+= Smart Mobile Advertisement
+
+UNIVERSITY OF KOCAELI
+DEPARTMENT OF COMPUTER ENGINEERING
+BLM306 SOFTWARE LAB. II, 2018-2019
+PROJECT 3
+
+PROJECT DELIVERY DATE: 26/05/2019 at 23:59
+
+SMART ADVERTISING MANAGEMENT SYSTEM
+This project aims to use Android application and cloud computing technologies.
+You are asked to do a smart ad management system in the project. Android application is expected to develop.
+Android applications are expected to be:
+• Log in screen: The user must be able to login, change password or register with user name and password.
+• The user's location information will be received via GPS and can be entered manually.
+• The user should be able to see the campaigns of the desired category from the stores determined by the user by receiving the location information. For example, Ayse Izmit Cumhuriyet Cad. he realizes that he's hungry. He would then like to explore the campaigns at food venues that are no more than 100 meters away by opening the smart advertising application. The application starts to search the food category by entering a threshold of 100 meters. The application reaches the location information of Ayşe and the campaigns are displayed on the screen of Ayşe according to the information entered by Ayşe.
+• Verification (log-in) will be performed via the cloud, which will not contain user information.
+• The user can search according to the desired situation by category (food, clothing, electronic goods, cosmetics etc.) and store name.
+• Students who do not have Android phones can perform the application on the emulator.
+
+On Cloud Platform
+• The database will be kept. Your Company will keep your FirmID, FirmName, FirmLocation, Campaigner and CampaignRecord information.
+• Your mobile application must communicate with the API you will develop on the cloud platform.
+• You can enter a campaign from the interface of your API (no manual campaign entry will be made to the database).
+• Note: There are no restrictions on the cloud platform. You can take advantage of the cloud platform such as IBM, Google and Amazon.
+ 
+
+
+
+1. Homework submission
+● On the project presentation day, a hard copy must be submitted.
+● The report should consist of a summary, introduction, method, experimental results, result and bibliography section containing 4 pages, flow diagram or pseudo-code in ieee format (in previous years format).
+● The course will be tracked through the Google form system including the delivery of the project. Projects submitted after the specified date will not be accepted.
+● Questions about the project are available on Google form. See. Seda Kul and Res. See. Fulya Akdeniz may be asked.
+● Demo dates will be announced later.
+● During the demo, you may be asked about the algorithm, the various parts of the code you developed, and the development environment.
+● You may be prompted to explain any line code you use.
+
+
+
+
+COPY OPERATION WILL BE APPLIED FOR THE STUDENTS DETERMED THROUGH COPY OR COPY.
+
+THE PROJECT WILL BE MADE IN TWO-PERIOD TWO-PIECES.
