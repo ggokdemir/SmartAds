@@ -1,5 +1,5 @@
 @startuml
-package AndroidDevice <<Rectangle>> {
+package Client <<Rectangle>> {
 
 
   class MainLayout
@@ -8,6 +8,8 @@ package AndroidDevice <<Rectangle>> {
 +showContentWhenClickedToPopup(): void
 +changePassword(): void
 +gpsLocation(): Location
++searchTreshold(int distance) : List
++choseCategory() : void
 }
 
 
@@ -18,10 +20,12 @@ package AndroidDevice <<Rectangle>> {
 +signIn(): void
 }
 
-
+Location <-- MainLayout : uses
 
   class Location
 {
++autoLocation(): void
++manLocation(): void
 +getLng() : String
 +getLat() : String
 +setLng(String lng) : void
@@ -31,13 +35,13 @@ package AndroidDevice <<Rectangle>> {
 }
 }
 
-AndroidDevice --> AspNET : POST
-AndroidDevice <-- AspNET : GET
-AspNET -- MSSQL 
+Client --> AWS : POST
+Client <-- AWS : GET
+AWS -- DB 
 
 
 
-package AspNET <<Cloud>> 
+package AWS <<Cloud>> 
 {
 
 
@@ -53,7 +57,7 @@ class DbNewsRefresher
 }
 }
 
-package MSSQL <<Database>> 
+package DB <<Database>> 
 {
 
   class News
