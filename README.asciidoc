@@ -1,0 +1,2 @@
+= SmartAdsMobile
+Main part of the project.
