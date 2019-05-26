@@ -35,13 +35,13 @@ Location <-- MainLayout : uses
 }
 }
 
-Client --> AWS : POST
-Client <-- AWS : GET
-AWS --> DB : Write
-AWS <-- DB : Read
+Client --> Firebase: POST
+Client <-- Firebase: GET
+Firebase --> DB : Write
+Firebase <-- DB : Read
 
 
-package AWS <<Cloud>> 
+package Firebase <<Cloud>> 
 {
 
 
